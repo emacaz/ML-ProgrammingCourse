@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.u-wrapper {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 1em;
+    position: relative;
+}
+
+
+
+
+
+/* HEADER */
+header {
+    background-color: #f1eeee;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+header nav img {
+    width: 40px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 7px;
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+/* HEADER END */
+
+
+
+
+
+
+
+/* HERO */
+.hero {
+    background-color: #f1eeee;
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* HERO END */
+
+
+
+
+
+
+
+/* PRODUCTS */
+/* PRODUCTS END */
+
+
+
+
+
+
+
+/* FOOTER */
+/* FOOTER END */
+
+
+
+
+
+
+@media (max-width:768px) {
+
+/* HEADER */
+/* HEADER END */
+
+
+
+
+
+
+
+/* HERO */
+.hero-container {
+    display: block;
+}
+/* HERO END */
+
+
+
+
+
+
+
+/* PRODUCTS */
+/* PRODUCTS END */
+
+
+
+
+
+
+
+/* FOOTER */
+/* FOOTER END */
+}
