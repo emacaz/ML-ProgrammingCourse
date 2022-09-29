@@ -30,8 +30,17 @@ header nav img {
     width: 40px;
 }
 
+#btn-menu {
+    display: none;
+}
+
+header nav label {
+    display: none;
+}
+
 header nav ul {
     display: flex;
+    justify-self: right;
 }
 
 header nav ul li {
@@ -65,10 +74,39 @@ header nav ul li a:hover {
 
 .hero-image img {
     width: 100%;
-    border-radius: 10px;
-    margin: 10px;
+    border-radius: 50%;
 }
 
+.hero-description p:first-child {
+    text-transform: uppercase;
+}
+.hero-description h1 {
+    font-size: 30px;
+    margin: 4px 0;
+}
+
+.hero-description p:nth-child(3) {
+    font-size: 20px;
+}
+.hero-description p:nth-child(3) a {
+    color: #000;
+}
+.hero-description p:nth-child(3) a:hover {
+    color: rgb(73, 73, 73);
+}
+
+.hero-description a:nth-child(4) {
+    background-color: #ffc500;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.hero-description a:nth-child(4):hover {
+    transition: .3s;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
+}
 /* HERO END */
 
 
@@ -97,6 +135,47 @@ header nav ul li a:hover {
 @media (max-width:768px) {
 
 /* HEADER */
+.u-wrapper {
+    padding: 0;
+}
+section div div:first-child {
+    padding: 0 1rem;
+}
+header {
+    position: relative;
+}
+
+header nav label {
+    display: block;
+    cursor: pointer;
+    justify-self: right;
+}
+
+header nav {
+    position: relative;
+    padding: 0 1rem;
+}
+.items-menu {
+    position: absolute;
+    justify-self: left;
+    padding-left: 0;
+    display: block;
+    margin: 50px -100%;
+    background-color: #ffc500;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    text-align: center;
+}
+.items-menu li {
+    border-bottom: 1px solid black;
+}
+
+#btn-menu:checked ~ .items-menu {
+    margin: 44px 0;
+}
+
+
 /* HEADER END */
 
 
