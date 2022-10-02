@@ -132,6 +132,23 @@ header nav ul li a:hover {
     align-items: center;
     height: 200px;
     text-align: center;
+    padding: 30px;
+}
+
+
+.about-title {
+    padding: 0;
+}
+.about-title h1 {
+    font-size: 30px;
+    margin: auto;
+}
+
+
+.about-description {
+    line-height: 23px;
+    font-size: 19px;
+    text-align: justify;
 }
 /* ABOUT END */
 
@@ -148,6 +165,43 @@ header nav ul li a:hover {
 .products {
     background-color: #f1eeee;
 }
+
+.products-container {
+    padding: 50px 20px;
+}
+
+.products-container h1 {
+    
+}
+
+.products-all-items {
+    /* position: relative; */
+    display: grid;
+    gap: 15px;
+    /* grid-template-rows: repeat(auto-fill,265px); */
+    grid-template-columns: repeat(auto-fill,225px);
+    place-content: center;
+}
+
+.product-item {
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px;
+}
+
+.product-one {
+    background-color: #00c9ff
+}
+
+.product-two {
+    background-color: #ffc500;
+}
+
+.product-three {
+    background-color: #ff15c2;
+}
+
 /* PRODUCTS END */
 
 
@@ -157,6 +211,22 @@ header nav ul li a:hover {
 
 
 /* FOOTER */
+.footer-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container ul li {
+    padding: 10px;
+    list-style: none;
+    /* margin: auto; */
+}
+
+.footer-container img {
+    max-width: 30px;
+}
+
 /* FOOTER END */
 
 
@@ -179,7 +249,7 @@ header nav ul li a:hover {
     padding: 0;
 }
 section div div:first-child {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     padding-top: 30px;
 }
 header {
@@ -230,6 +300,18 @@ header nav {
     display: block;
 }
 /* HERO END */
+
+
+
+
+
+
+
+/* ABOUT */
+.about-container {
+    display: block;
+}
+/* ABOUT END */
 
 
 
